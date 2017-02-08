@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Intern_page1</title>
+  
+  
+  
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="./css/comment.css">
+
+    <style type="text/css">
+        body{
+            background-color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+        <div id="detail_screen">
+          <div id="detail_info">
+            <div id="detail_pad">
+              <div>
+                <div id="dt_exit">exit</div>
+                <div id="dt_compName">微軟</div>
+                <div><button class="dt_cpBtn">公司官網</button><button class="dt_cpBtn">我在這裡實習</button></div>
+              </div>
+              <hr width="100%">
+              <div>
+                <h2>參與內容</h2>
+                <div id="dt_work"></div>
+              </div>
+              <div>
+                <h2>薪資合理嗎？(1-5 分)</h2>
+                <div id="dt_salary"></div>
+              </div>
+              <div>
+                <h2>原因</h2>
+                <div id="dt_salaWhy"></div>
+              </div>
+              <div>
+                <h2>參與心得</h2>
+                <div id="dt_review"></div>
+              </div>
+              <div>
+                <h2>給學弟妹的建議</h2>
+                <div id="dt_advice"></div>
+              </div>
+              <div>
+                <h2>你覺得有意義嗎？</h2>
+                <div id="dt_meaning"></div>
+              </div>
+              <hr width="100%">
+              * 表示未填入資料
+            </div>
+          </div>
+
+        </div>
+
+        <div class="frame">
+                <div class="top_bar" style="z-index:100">
+                    <div >
+                            <div class="top_unit" id="top_unit1">LOGO</div>
+                            <div class="top_unit" id="top_unit2">
+                                    <input class="in_search" type="text" placeholder="Insert Company Name"/>
+                            </div>
+                            <div class="top_unit" id="top_unit3">
+                                    <div id="bar_menu1" class="bar_menu">Report</div>
+                                    <div id="bar_menu2" class="bar_menu">Comments</div>
+                                    <div id="bar_menu3" class="bar_menu">Participate</div>
+                                    <div id="bar_menu4" class="bar_menu">Login</div>
+                            </div>
+                    </div>
+                </div>
+
+                <div id="empty_top"></div>    
+                <div >
+                       <div class="department" style="display:inline-block">
+                            <input type="checkbox" >
+                            <span>科技業</span>
+                       </div>                                                     
+                       <div class="department" style="display:inline-block">
+                            <input type="checkbox" >
+                            <span>廣告業</span>
+                       </div>                                                     
+                       <div class="department" style="display:inline-block">
+                            <input type="checkbox" >
+                            <span>金融業</span>
+                       </div>                                                     
+                       <div class="department" style="display:inline-block">
+                            <input type="checkbox" >
+                            <span>政府機關</span>
+                       </div>                                                     
+                       <div class="department" style="display:inline-block">
+                            <input type="checkbox" >
+                            <span>研究機關</span>
+                       </div>                                                     
+                       <div class="department" style="display:inline-block">
+                            <input type="checkbox" >
+                            <span>學校部門</span>
+                       </div>                                                     
+                       <div class="department" style="display:inline-block">
+                            <input type="checkbox" >
+                            <span>新創公司</span>
+                       </div>                                                     
+                </div>
+                <br>
+                <div style="text-align:center">
+                  <div id="pagination"></div>
+                </div>
+                <br>
+                <br>
+                <div style="position:relative;left:5%;width:90%;text-align:center">
+                  <div style="width:100%;">
+                    <table  style="width:100%">
+                      <tr>
+                        <!-- <th style="text-align:center;width:5%">編號</th> -->
+                        <th style="text-align:center;width:10%">公司名稱</th>
+                        <th style="text-align:center;width:20%">職位名稱</th>
+                        <th style="text-align:center;width:20%">每週工時</th>
+                        <th style="text-align:center;width:20%">平均時薪</th>
+                        <th style="text-align:center;width:5%">保險</th>
+                        <th style="text-align:center;width:20%">推薦程度</th>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <br>
+                <p style="position:relative;left:5%">* 表示未填入資料</p>
+                <hr width="90%">
+                <br>
+                <div style="z-index:1;position:relative;left:5%;width:90%;text-align:center">
+                  <div style="width:100%;">
+                    <table  id="table_push" style="width:100%">
+                      <tr>
+                        <!-- <th style="text-align:center;width:5%">編號</th> -->
+                        <th style="text-align:center;width:10%"></th>
+                        <th style="text-align:center;width:20%"></th>
+                        <th style="text-align:center;width:20%"></th>
+                        <th style="text-align:center;width:20%"></th>
+                        <th style="text-align:center;width:5%"></th>
+                        <th style="text-align:center;width:20%"></th>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+        </div>
+</body>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <!-- // <script type="text/javascript" src="./js/jquery-1.6.1.min.js"></script>   -->
+  <script type="text/javascript">
+    
+$('#dt_exit').on('click',function(){
+    $('#detail_screen').toggle(500);
+    
+  })
+  </script>
+  <script type="text/javascript" src="./js/xml.js"></script>
+
+  <script type="text/javascript" src="./js/pagination.js"></script>
+</html>
